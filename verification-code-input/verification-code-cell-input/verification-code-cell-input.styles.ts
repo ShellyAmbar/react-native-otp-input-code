@@ -31,4 +31,11 @@ export default StyleSheet.create({
   errorText: {
     color: "#F72525",
   },
+  successText: {
+    color: "#00D261",
+  },
+  successContainer: {
+    backgroundColor: "#D7D9DE",
+    borderColor: "#00D261",
+  },
 });

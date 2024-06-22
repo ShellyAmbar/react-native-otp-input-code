@@ -1,7 +1,8 @@
 import {TextStyle, ViewStyle} from "react-native";
 
 export default interface VerificationCodeInputProps {
-  isValid: boolean;
+  isValid?: boolean;
+  isSuccess?: boolean;
   onComplete: (val: string) => void;
   onChangeText: (val: string) => void;
   uppercase?: boolean;

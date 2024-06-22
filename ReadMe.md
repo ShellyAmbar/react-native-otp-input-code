@@ -11,6 +11,12 @@
 ```
 import VerificationCodeInput from 'react-native-otp-input-code';
 
+ const [isVarificationCodeValide, setIsVarificationCodeValide] =
+    useState(true);
+  const [isVarificationCodeSuccess, setIsVarificationCodeSuccess] =
+    useState(false);
+
+
    <VerificationCodeInput
         isSecure={true}
         textContentType="oneTimeCode"
@@ -22,7 +28,8 @@ import VerificationCodeInput from 'react-native-otp-input-code';
             resetBoxes();
           }
         }}
-        isValid={!isVarificationCodeValide}
+        isValid={isVarificationCodeValide}
+         isSuccess={isVarificationCodeSuccess}
         textStyle={{color: "#FFFF"}}
         containerStyle={{borderWidth: 1}}
         errorTextStyle={{color: "red"}}
@@ -34,7 +41,8 @@ import VerificationCodeInput from 'react-native-otp-input-code';
 
 | Name                 | Type                  |
 | -------------------- | --------------------- |
-| isValid              | boolean               |
+| isValid?             | boolean               |
+| isSuccess?           | boolean               |
 | onComplete           | (val: string) => void |
 | onChangeText         | (val: string) => void |
 | uppercase?           | boolean               |

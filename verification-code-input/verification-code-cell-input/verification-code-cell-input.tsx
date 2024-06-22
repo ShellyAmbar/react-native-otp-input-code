@@ -1,6 +1,6 @@
 import React from "react";
 import {Cursor} from "./cursor/cursor";
-import VerificationCodeCellProps from "./interfaces";
+import VerificationCodeCellProps, {CellInputType} from "./interfaces";
 import Styles from "./verification-code-cell-input.styles";
 import {Text, View} from "react-native";
 
@@ -11,6 +11,9 @@ const VerificationCodeCellInput = ({
   errorTextStyle,
   errorContainerStyle,
   isSecure = false,
+  status,
+  successContainerStyle,
+  successTextStyle,
   ...props
 }: VerificationCodeCellProps) => {
   return (
@@ -19,11 +22,17 @@ const VerificationCodeCellInput = ({
       style={[
         Styles.defaultContainer,
         {...containerStyle},
-        !props.isValid
-          ? {...Styles.errorContainer, ...errorContainerStyle}
-          : {},
+
         {
           marginHorizontal: 20 / numOfCells,
+        },
+        status === CellInputType.error && {
+          ...Styles.errorContainer,
+          ...errorContainerStyle,
+        },
+        status === CellInputType.correct && {
+          ...Styles.successContainer,
+          ...successContainerStyle,
         },
       ]}
     >
@@ -31,7 +40,14 @@ const VerificationCodeCellInput = ({
         style={[
           Styles.text,
           {...textStyle},
-          !props.isValid ? {...Styles.errorText, ...errorTextStyle} : {},
+          status === CellInputType.error && {
+            ...Styles.errorText,
+            ...errorTextStyle,
+          },
+          status === CellInputType.correct && {
+            ...Styles.successText,
+            ...successTextStyle,
+          },
         ]}
       >
         {(props.value ? (isSecure ? "*" : props.value) : null) ||

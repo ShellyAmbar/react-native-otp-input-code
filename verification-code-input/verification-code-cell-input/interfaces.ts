@@ -7,7 +7,7 @@ export enum CellInputType {
 }
 
 export default interface VerificationCodeCellProps {
-  isValid: boolean;
+  status: CellInputType;
   value: string;
   isFocused: boolean;
   onLayout: (event: LayoutChangeEvent) => void;
@@ -16,5 +16,7 @@ export default interface VerificationCodeCellProps {
   containerStyle?: ViewStyle;
   errorTextStyle?: TextStyle;
   errorContainerStyle?: ViewStyle;
+  successTextStyle?: TextStyle;
+  successContainerStyle?: ViewStyle;
   isSecure?: boolean;
 }

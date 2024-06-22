@@ -1,8 +1,8 @@
 {
   "name": "react-native-otp-input-code",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A react native dynamic component that can be used for OTP's and Pins as secure pin input.",
-  "main": "index.js",
+  "main": "./verification-code-input/verification-code-input.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

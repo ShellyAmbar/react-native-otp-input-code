@@ -24,5 +24,9 @@
   "bugs": {
     "url": "https://github.com/ShellyAmbar/react-native-otp-input-code/issues"
   },
-  "homepage": "https://github.com/ShellyAmbar/react-native-otp-input-code#readme"
+  "homepage": "https://github.com/ShellyAmbar/react-native-otp-input-code#readme",
+  "peerDependencies": {
+    "react": "18.2.0~",
+    "react-native": "0.72.7~"
+  }
 }

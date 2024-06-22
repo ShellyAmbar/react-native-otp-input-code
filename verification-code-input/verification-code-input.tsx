@@ -32,6 +32,7 @@ const VerificationCodeInput = (props: VerificationCodeInputProps) => {
       textContentType={props.textContentType}
       renderCell={({index, symbol, isFocused}) => (
         <VerificationCodeCellInput
+          isSecure={props.isSecure}
           numOfCells={props.cellCount}
           key={index}
           onLayout={getCellOnLayoutHandler(index)}

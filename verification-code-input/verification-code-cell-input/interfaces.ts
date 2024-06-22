@@ -16,4 +16,5 @@ export default interface VerificationCodeCellProps {
   containerStyle?: ViewStyle;
   errorTextStyle?: TextStyle;
   errorContainerStyle?: ViewStyle;
+  isSecure?: boolean;
 }

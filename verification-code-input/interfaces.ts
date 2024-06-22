@@ -12,6 +12,7 @@ export default interface VerificationCodeInputProps {
   containerStyle?: ViewStyle;
   errorTextStyle?: TextStyle;
   errorContainerStyle?: ViewStyle;
+  isSecure?: boolean;
 }
 
 export enum KeyboardType {

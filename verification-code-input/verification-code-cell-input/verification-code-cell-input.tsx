@@ -10,6 +10,7 @@ const VerificationCodeCellInput = ({
   textStyle,
   errorTextStyle,
   errorContainerStyle,
+  isSecure = false,
   ...props
 }: VerificationCodeCellProps) => {
   return (
@@ -33,7 +34,8 @@ const VerificationCodeCellInput = ({
           !props.isValid ? {...Styles.errorText, ...errorTextStyle} : {},
         ]}
       >
-        {props.value || (props.isFocused ? <Cursor /> : null)}
+        {(props.value ? (isSecure ? "*" : props.value) : null) ||
+          (props.isFocused ? <Cursor /> : null)}
       </Text>
     </View>
   );

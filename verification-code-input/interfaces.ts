@@ -1,6 +1,6 @@
-import {TextStyle, ViewStyle} from "react-native";
+import {TextStyle, ViewStyle, TextInputProps} from "react-native";
 
-export default interface VerificationCodeInputProps {
+export default interface VerificationCodeInputProps extends TextInputProps {
   isValid?: boolean;
   isSuccess?: boolean;
   onComplete: (val: string) => void;

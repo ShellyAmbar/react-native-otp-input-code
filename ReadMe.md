@@ -16,9 +16,10 @@ import VerificationCodeInput from 'react-native-otp-input-code';
     useState(true);
   const [isVarificationCodeSuccess, setIsVarificationCodeSuccess] =
     useState(false);
-
+ const inputRef = useRef(null);
 
    <VerificationCodeInput
+        ref={inputRef}
         isSecure={true}
         textContentType="oneTimeCode"
         keyboardType={KeyboardType.number_pad}

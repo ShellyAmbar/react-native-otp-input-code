@@ -1,4 +1,4 @@
-- A react native dynamic component that can be used for OTP's and Pins as secure pin input.
+- A react native dynamic component that can be used for OTP's and Pins as a secure pin input and can have a dinamic number of inputes.
 
 - It comes with a built-in TypeScript typings and is compatible with all popular JavaScript frameworks. You can use it directly or leverage well-maintained wrapper packages that allow for a more native integration with your frameworks of choice.
 

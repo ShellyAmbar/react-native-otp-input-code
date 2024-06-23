@@ -39,7 +39,7 @@ import VerificationCodeInput from 'react-native-otp-input-code';
       />
 ```
 
-# VerificationCodeInputProps Props :
+# VerificationCodeInputProps Props extends TextInputProps :
 
 | Name                 | Type                  |
 | -------------------- | --------------------- |
@@ -56,3 +56,4 @@ import VerificationCodeInput from 'react-native-otp-input-code';
 | errorTextStyle?      | TextStyle             |
 | errorContainerStyle? | ViewStyle             |
 | isSecure?            | boolean               |
+| ...props             | TextInputProps        |

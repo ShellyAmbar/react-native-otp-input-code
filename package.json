@@ -1,6 +1,6 @@
 {
   "name": "react-native-otp-input-code",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "A react native dynamic component that can be used for OTP's and Pins as a secure pin input and can have a dynamic number of inputes.",
   "main": "./verification-code-input/verification-code-input.tsx",
   "scripts": {
@@ -19,12 +19,17 @@
     "OTP",
     "code-input",
     "inputs",
-    "dinamic-inputs",
+    "dynamic-inputs",
     "verification",
     "secure",
     "password",
     "react-native",
-    "react"
+    "react",
+    "input",
+    "textinput",
+    "secret",
+    "dynamic pin",
+    "dynamic code"
   ],
   "author": "Shelly Ambar",
   "license": "ISC",
